@@ -8,7 +8,6 @@
 <title>AF TOURNAMENTS</title>
 
 <style>
-
 *{
     margin:0;
     padding:0;
@@ -119,34 +118,32 @@ nav a.active{
 .hero{
     position:relative;
     overflow:hidden;
-    min-height:650px;
+    min-height:470px;
     display:flex;
     align-items:center;
 
-    background-image:
-        linear-gradient(
-            90deg,
-            rgba(2,7,12,.95) 0%,
-            rgba(2,7,12,.78) 38%,
-            rgba(2,7,12,.35) 68%,
-            rgba(2,7,12,.60) 100%
+    background:
+        url("1148B0E0-B959-476E-9028-06FDE1F26A4F.png")
+        center center / cover no-repeat,
+        radial-gradient(
+            circle at 74% 45%,
+            rgba(255,190,0,.25),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 55% 80%,
+            rgba(255,180,0,.12),
+            transparent 28%
         ),
         linear-gradient(
-            180deg,
-            rgba(2,7,12,.25),
-            rgba(2,7,12,.75)
-        ),
-        url("1148B0E0-B959-476E-9028-06FDE1F26A4F.png");
-
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+            110deg,
+            #02070c 0%,
+            #071019 42%,
+            #0a0d0c 100%
+        );
 
     border-bottom:1px solid #202b37;
 }
-
-
-/* DARK + GOLD EFFECT OVER IMAGE */
 
 .hero:before{
     content:"";
@@ -154,21 +151,20 @@ nav a.active{
     inset:0;
 
     background:
-        radial-gradient(
-            circle at 75% 45%,
-            rgba(255,196,0,.18),
-            transparent 28%
-        ),
         linear-gradient(
             90deg,
-            rgba(2,7,12,.40),
-            transparent 55%,
-            rgba(2,7,12,.30)
+            rgba(2,7,12,.98) 0%,
+            rgba(2,7,12,.72) 42%,
+            rgba(2,7,12,.25) 70%,
+            rgba(2,7,12,.78) 100%
+        ),
+        repeating-linear-gradient(
+            115deg,
+            transparent 0 70px,
+            rgba(255,196,0,.025) 71px,
+            transparent 72px
         );
 }
-
-
-/* GOLD GLOW */
 
 .hero:after{
     content:"";
@@ -177,25 +173,22 @@ nav a.active{
     width:520px;
     height:520px;
 
-    right:5%;
-    top:5%;
+    right:20%;
+    top:-60px;
 
     border-radius:50%;
 
-    border:1px solid rgba(255,196,0,.10);
+    border:1px solid rgba(255,196,0,.12);
 
     box-shadow:
         0 0 90px rgba(255,196,0,.12),
         inset 0 0 90px rgba(255,196,0,.05);
-
-    pointer-events:none;
 }
-
 
 .hero-inner{
     position:relative;
     z-index:2;
-    padding:80px 0;
+    padding:65px 0;
 }
 
 .hero-grid{
@@ -205,7 +198,6 @@ nav a.active{
     align-items:center;
 }
 
-
 .badge{
     display:inline-block;
 
@@ -214,17 +206,13 @@ nav a.active{
 
     border-radius:30px;
 
-    padding:9px 16px;
+    padding:7px 14px;
 
     font-size:12px;
     font-weight:900;
 
     margin-bottom:18px;
-
-    background:rgba(2,7,12,.45);
-    backdrop-filter:blur(5px);
 }
-
 
 .hero h1{
     font-size:clamp(52px,7vw,86px);
@@ -233,9 +221,6 @@ nav a.active{
     text-transform:uppercase;
 
     letter-spacing:-3px;
-
-    text-shadow:
-        0 5px 25px rgba(0,0,0,.7);
 }
 
 .hero h1 .white{
@@ -248,20 +233,15 @@ nav a.active{
     color:#ffc400;
 }
 
-
 .hero-text{
-    color:#d2d8df;
+    color:#c1c9d3;
 
     font-size:16px;
 
     max-width:500px;
 
     margin:20px 0 25px;
-
-    text-shadow:
-        0 3px 15px rgba(0,0,0,.8);
 }
-
 
 .btn{
     display:inline-flex;
@@ -293,17 +273,38 @@ nav a.active{
     transform:translateY(-1px);
 }
 
+.hero-logo{
+    position:absolute;
 
-/* =========================
-   CURRENT TOURNAMENT
-========================= */
+    width:390px;
+    height:390px;
+
+    object-fit:contain;
+
+    right:30%;
+    top:50%;
+
+    transform:translate(50%,-50%);
+
+    opacity:.78;
+
+    mix-blend-mode:screen;
+
+    filter:
+        drop-shadow(
+            0 0 35px
+            rgba(255,196,0,.25)
+        );
+
+    z-index:1;
+}
 
 .tournament-card{
     position:relative;
 
     z-index:4;
 
-    background:rgba(3,9,15,.88);
+    background:rgba(7,13,19,.92);
 
     border:1px solid #806800;
 
@@ -313,9 +314,7 @@ nav a.active{
 
     box-shadow:
         0 15px 55px
-        rgba(0,0,0,.65);
-
-    backdrop-filter:blur(6px);
+        rgba(0,0,0,.45);
 }
 
 .tournament-card .eyebrow,
@@ -364,7 +363,7 @@ nav a.active{
 
     border-radius:5px;
 
-    background:rgba(5,9,14,.85);
+    background:#05090e;
 }
 
 .count b{
@@ -927,12 +926,12 @@ footer{
     .hero{
         min-height:auto;
 
-        background-position:
-            63% center;
+        background-position:70% center;
+        background-size:cover;
     }
 
     .hero-inner{
-        padding:55px 0;
+        padding:48px 0;
     }
 
     .hero-grid{
@@ -941,12 +940,17 @@ footer{
         gap:30px;
     }
 
-    .hero:after{
-        width:350px;
-        height:350px;
+    .hero-logo{
+        width:310px;
+        height:310px;
 
-        right:-100px;
-        top:120px;
+        right:50%;
+        top:27%;
+
+        transform:
+            translate(50%,-50%);
+
+        opacity:.18;
     }
 
     .hero h1{
@@ -988,13 +992,7 @@ footer{
     }
 }
 
-
 @media(max-width:480px){
-
-    .hero{
-        background-position:
-            64% center;
-    }
 
     .hero h1{
         font-size:47px;
@@ -1012,7 +1010,6 @@ footer{
         font-size:24px;
     }
 }
-
 </style>
 </head>
 
@@ -1045,7 +1042,10 @@ TOURNAMENTS
 
 <nav>
 
-<a class="active" href="#home">
+<a
+class="active"
+href="#home"
+>
 Home
 </a>
 
@@ -1084,6 +1084,12 @@ Rules
 <section
 class="hero"
 id="home"
+>
+
+<img
+class="hero-logo"
+src="9a3304ef-660f-4291-b69e-a0171f547896.jpeg"
+alt=""
 >
 
 <div class="container hero-inner">

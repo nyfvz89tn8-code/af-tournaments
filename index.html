@@ -4,48 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#02070c">
-
 <title>AF TOURNAMENTS</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#02070c;
-    color:#fff;
-    line-height:1.5;
-}
-
-a{
-    text-decoration:none;
-    color:inherit;
-}
-
-button,
-input,
-select{
-    font:inherit;
-}
-
-.container{
-    width:90%;
-    max-width:1180px;
-    margin:auto;
-}
-
-
-/* =========================
-   HEADER
-========================= */
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:Arial,Helvetica,sans-serif;background:#02070c;color:#fff;line-height:1.5;}
+a{text-decoration:none;color:inherit;}
+button,input,select{font:inherit;}
+.container{width:90%;max-width:1180px;margin:auto;}
 
 header{
     position:sticky;
@@ -84,9 +51,7 @@ header{
     font-style:italic;
 }
 
-.brand strong{
-    color:#fff;
-}
+.brand strong{color:#fff;}
 
 nav{
     display:flex;
@@ -100,9 +65,7 @@ nav a{
     transition:.2s;
 }
 
-nav a:hover{
-    color:#ffc400;
-}
+nav a:hover{color:#ffc400;}
 
 nav a.active{
     color:#ffc400;
@@ -167,15 +130,11 @@ nav a.active{
 .hero:after{
     content:"";
     position:absolute;
-
     width:520px;
     height:520px;
-
     right:20%;
     top:-60px;
-
     border-radius:50%;
-
     border:1px solid rgba(255,196,0,.12);
 
     box-shadow:
@@ -198,26 +157,19 @@ nav a.active{
 
 .badge{
     display:inline-block;
-
     border:1px solid #8b7000;
     color:#ffc400;
-
     border-radius:30px;
-
     padding:7px 14px;
-
     font-size:12px;
     font-weight:900;
-
     margin-bottom:18px;
 }
 
 .hero h1{
     font-size:clamp(52px,7vw,86px);
     line-height:.87;
-
     text-transform:uppercase;
-
     letter-spacing:-3px;
 }
 
@@ -233,36 +185,24 @@ nav a.active{
 
 .hero-text{
     color:#c1c9d3;
-
     font-size:16px;
-
     max-width:500px;
-
     margin:20px 0 25px;
 }
 
 .btn{
     display:inline-flex;
-
     align-items:center;
     justify-content:center;
-
     gap:8px;
-
     background:#ffc400;
     color:#070a0e;
-
     padding:13px 22px;
-
     border-radius:6px;
-
     font-weight:900;
     font-size:13px;
-
     border:0;
-
     cursor:pointer;
-
     transition:.2s;
 }
 
@@ -273,19 +213,13 @@ nav a.active{
 
 .hero-logo{
     position:absolute;
-
     width:390px;
     height:390px;
-
     object-fit:contain;
-
     right:30%;
     top:50%;
-
     transform:translate(50%,-50%);
-
     opacity:.78;
-
     mix-blend-mode:screen;
 
     filter:
@@ -299,15 +233,10 @@ nav a.active{
 
 .tournament-card{
     position:relative;
-
     z-index:4;
-
     background:rgba(7,13,19,.92);
-
     border:1px solid #806800;
-
     border-radius:12px;
-
     padding:23px;
 
     box-shadow:
@@ -318,11 +247,8 @@ nav a.active{
 .tournament-card .eyebrow,
 .section-eyebrow{
     color:#ffc400;
-
     font-size:11px;
-
     font-weight:900;
-
     text-transform:uppercase;
 }
 
@@ -333,48 +259,34 @@ nav a.active{
 
 .open{
     color:#35e68c;
-
     font-size:11px;
-
     font-weight:900;
-
     margin:8px 0 16px;
 }
 
 .count{
     display:grid;
-
-    grid-template-columns:
-        repeat(4,1fr);
-
+    grid-template-columns:repeat(4,1fr);
     gap:8px;
-
     margin-bottom:17px;
 }
 
 .count div{
     text-align:center;
-
     padding:8px 3px;
-
     border:1px solid #3a3b35;
-
     border-radius:5px;
-
     background:#05090e;
 }
 
 .count b{
     display:block;
-
     color:#fff;
-
     font-size:20px;
 }
 
 .count small{
     color:#9099a5;
-
     font-size:8px;
 }
 
@@ -413,10 +325,7 @@ section{
 
 .features{
     display:grid;
-
-    grid-template-columns:
-        repeat(3,1fr);
-
+    grid-template-columns:repeat(3,1fr);
     gap:18px;
 }
 
@@ -429,29 +338,23 @@ section{
         );
 
     border:1px solid #263746;
-
     border-radius:9px;
-
     padding:23px;
 }
 
 .feature-icon{
     color:#ffc400;
-
     font-size:30px;
-
     margin-bottom:10px;
 }
 
 .card h3{
     font-size:16px;
-
     margin-bottom:7px;
 }
 
 .card p{
     color:#8f9aa7;
-
     font-size:12px;
 }
 
@@ -462,12 +365,8 @@ section{
 
 .two-col{
     display:grid;
-
-    grid-template-columns:
-        1.05fr 1fr;
-
+    grid-template-columns:1.05fr 1fr;
     gap:20px;
-
     align-items:start;
 }
 
@@ -480,9 +379,7 @@ section{
         );
 
     border:1px solid #263746;
-
     border-radius:9px;
-
     padding:20px;
 }
 
@@ -496,7 +393,6 @@ section{
 
 .panel-title p{
     color:#8e99a6;
-
     font-size:12px;
 }
 
@@ -507,10 +403,7 @@ section{
 
 .form-grid{
     display:grid;
-
-    grid-template-columns:
-        1fr 1fr;
-
+    grid-template-columns:1fr 1fr;
     gap:0 13px;
 }
 
@@ -520,32 +413,21 @@ section{
 
 label{
     display:block;
-
     color:#d7dde5;
-
     font-size:11px;
-
     margin:0 0 5px;
 }
 
 input,
 select{
     width:100%;
-
     padding:10px 11px;
-
     margin-bottom:12px;
-
     background:#040a10;
-
     color:#fff;
-
     border:1px solid #2b3a49;
-
     border-radius:5px;
-
     outline:none;
-
     font-size:11px;
 }
 
@@ -556,7 +438,6 @@ select:focus{
 
 .form-submit{
     width:100%;
-
     margin-top:2px;
 }
 
@@ -567,54 +448,40 @@ select:focus{
 
 .notice-list{
     display:grid;
-
     gap:9px;
 }
 
 .notice{
     display:flex;
-
     gap:12px;
-
     padding:13px;
-
     border:1px solid #253544;
-
     border-radius:7px;
-
     background:#050b11;
 }
 
 .notice-icon{
     min-width:32px;
     height:32px;
-
     display:grid;
-
     place-items:center;
-
     color:#ffc400;
-
     font-size:19px;
 }
 
 .notice small{
     color:#ffc400;
-
     font-size:8px;
-
     font-weight:900;
 }
 
 .notice h3{
     font-size:11px;
-
     margin:1px 0;
 }
 
 .notice p{
     color:#8e99a6;
-
     font-size:9px;
 }
 
@@ -625,38 +492,28 @@ select:focus{
 
 .table-wrap{
     overflow:auto;
-
     border:1px solid #263746;
-
     border-radius:8px;
 }
 
 table{
     width:100%;
-
     min-width:560px;
-
     border-collapse:collapse;
-
     background:#050b11;
 }
 
 th,
 td{
     padding:12px 10px;
-
     border-bottom:1px solid #202d39;
-
     text-align:left;
-
     font-size:10px;
 }
 
 th{
     color:#ffc400;
-
     font-size:8px;
-
     text-transform:uppercase;
 }
 
@@ -666,7 +523,6 @@ td{
 
 td:last-child{
     color:#ffc400;
-
     font-weight:900;
 }
 
@@ -677,10 +533,7 @@ td:last-child{
 
 .history-grid{
     display:grid;
-
-    grid-template-columns:
-        repeat(3,1fr);
-
+    grid-template-columns:repeat(3,1fr);
     gap:12px;
 }
 
@@ -690,7 +543,6 @@ td:last-child{
 
 .status{
     display:inline-block;
-
     color:#35e68c;
 
     background:
@@ -701,17 +553,13 @@ td:last-child{
         rgba(53,230,140,.25);
 
     border-radius:15px;
-
     padding:3px 7px;
-
     font-size:7px;
-
     font-weight:900;
 }
 
 .history-card h3{
     font-size:13px;
-
     margin:11px 0 5px;
 }
 
@@ -721,9 +569,7 @@ td:last-child{
 
 .small-btn{
     padding:8px 10px;
-
     font-size:8px;
-
     margin-top:11px;
 }
 
@@ -734,39 +580,26 @@ td:last-child{
 
 .rules{
     display:grid;
-
     gap:0;
 }
 
 .rule{
     display:grid;
-
-    grid-template-columns:
-        27px 1fr;
-
+    grid-template-columns:27px 1fr;
     gap:10px;
-
     padding:11px 0;
-
     border-bottom:1px solid #202d39;
 }
 
 .number{
     width:25px;
     height:25px;
-
     border-radius:50%;
-
     background:#ffc400;
-
     color:#080b0e;
-
     display:grid;
-
     place-items:center;
-
     font-size:10px;
-
     font-weight:900;
 }
 
@@ -776,7 +609,6 @@ td:last-child{
 
 .rule p{
     color:#8e99a6;
-
     font-size:9px;
 }
 
@@ -787,11 +619,8 @@ td:last-child{
 
 .cta{
     position:relative;
-
     overflow:hidden;
-
     text-align:center;
-
     padding:52px 0;
 
     background:
@@ -813,7 +642,6 @@ td:last-child{
         );
 
     border-top:1px solid #544400;
-
     border-bottom:1px solid #544400;
 }
 
@@ -827,9 +655,7 @@ td:last-child{
 
 .cta p{
     color:#929daa;
-
     font-size:12px;
-
     margin:7px 0 18px;
 }
 
@@ -840,65 +666,271 @@ td:last-child{
 
 footer{
     background:#02070c;
-
     border-top:1px solid #18232d;
-
     padding:28px 0;
 }
 
 .footer-inner{
     display:flex;
-
     align-items:center;
-
     justify-content:space-between;
 }
 
 .footer-brand{
     display:flex;
-
     align-items:center;
-
     gap:9px;
-
     font-weight:900;
-
     font-size:12px;
 }
 
 .footer-brand img{
     width:43px;
     height:43px;
-
     object-fit:contain;
-
     mix-blend-mode:screen;
 }
 
 .footer-brand .af{
     color:#ffc400;
-
     font-size:19px;
-
     font-style:italic;
 }
 
 .footer-copy{
     text-align:center;
-
     color:#8c97a4;
-
     font-size:9px;
 }
 
 .socials{
     display:flex;
-
     gap:10px;
-
     color:#dce1e7;
-
     font-size:13px;
+}
+
+
+/* =========================
+   REGISTRATION PAGE STYLE
+========================= */
+
+.registration-section{
+    position:relative;
+    overflow:hidden;
+    padding:55px 0 70px;
+
+    background:
+        radial-gradient(
+            circle at 50% 20%,
+            rgba(255,196,0,.10),
+            transparent 32%
+        ),
+        linear-gradient(
+            180deg,
+            #071019 0%,
+            #02070c 72%
+        );
+
+    border-top:1px solid #202b37;
+}
+
+.registration-section:before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+        radial-gradient(
+            circle at 15% 25%,
+            rgba(255,196,0,.06),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 85% 65%,
+            rgba(255,196,0,.05),
+            transparent 30%
+        );
+
+    pointer-events:none;
+}
+
+.registration-heading{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    margin-bottom:28px;
+}
+
+.registration-heading h2{
+    font-size:34px;
+    text-transform:uppercase;
+    letter-spacing:-1px;
+}
+
+.registration-heading p{
+    color:#aeb8c4;
+    font-size:13px;
+    margin-top:5px;
+}
+
+.registration-layout{
+    position:relative;
+    z-index:2;
+
+    display:grid;
+    grid-template-columns:
+        minmax(0,1.45fr)
+        minmax(280px,.72fr);
+
+    gap:20px;
+    align-items:stretch;
+}
+
+.registration-form-card{
+    background:rgba(3,10,16,.94);
+    border:1px solid #263746;
+    border-radius:7px;
+    padding:22px;
+
+    box-shadow:
+        0 15px 45px
+        rgba(0,0,0,.35);
+}
+
+.reg-step{
+    margin-bottom:19px;
+}
+
+.reg-step-title{
+    color:#f2f5f8;
+    font-size:13px;
+    font-weight:900;
+    margin-bottom:10px;
+}
+
+.reg-step-title span{
+    color:#fff;
+}
+
+.registration-form-card select,
+.registration-form-card input{
+    background:#0a1a27;
+    border:1px solid #263c4d;
+    border-radius:3px;
+    color:#eaf0f5;
+    padding:10px 12px;
+    margin-bottom:0;
+    font-size:11px;
+}
+
+.registration-form-card select:focus,
+.registration-form-card input:focus{
+    border-color:#ffc400;
+}
+
+.reg-team-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px 14px;
+}
+
+.reg-field.full{
+    grid-column:1/-1;
+}
+
+.reg-field label{
+    font-size:10px;
+    margin-bottom:5px;
+}
+
+.reg-check{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#b8c1ca;
+    font-size:9px;
+    margin:11px 0 13px;
+}
+
+.reg-check input{
+    width:13px;
+    height:13px;
+    margin:0;
+    accent-color:#ffc400;
+}
+
+.reg-submit{
+    width:100%;
+    border-radius:3px;
+    padding:11px 15px;
+    font-size:11px;
+}
+
+.registration-side{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.registration-info{
+    background:rgba(3,10,16,.94);
+    border:1px solid #263746;
+    border-radius:7px;
+    padding:22px;
+}
+
+.registration-info h3{
+    font-size:13px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+}
+
+.info-item{
+    display:flex;
+    gap:13px;
+    align-items:center;
+    margin:15px 0;
+}
+
+.info-icon{
+    width:31px;
+    height:31px;
+    flex:0 0 31px;
+    border:1px solid #806800;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    color:#ffc400;
+    font-size:15px;
+}
+
+.info-item strong{
+    display:block;
+    font-size:11px;
+    color:#dce3ea;
+}
+
+.info-item span{
+    display:block;
+    color:#8f9ba7;
+    font-size:9px;
+    margin-top:2px;
+}
+
+.reg-quote{
+    padding:0 8px;
+    color:#ffc400;
+    font-size:13px;
+    line-height:1.6;
+    font-weight:700;
+}
+
+.reg-quote small{
+    display:block;
+    color:#9aa5b0;
+    font-size:9px;
+    margin-top:7px;
 }
 
 
@@ -931,14 +963,12 @@ footer{
 
     .hero-grid{
         grid-template-columns:1fr;
-
         gap:30px;
     }
 
     .hero-logo{
         width:310px;
         height:310px;
-
         right:50%;
         top:27%;
 
@@ -950,7 +980,6 @@ footer{
 
     .hero h1{
         font-size:54px;
-
         letter-spacing:-2px;
     }
 
@@ -982,8 +1011,36 @@ footer{
 
     .footer-inner{
         flex-direction:column;
-
         gap:15px;
+    }
+
+    .registration-layout{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    .registration-section{
+        padding:42px 0 55px;
+    }
+
+    .registration-heading h2{
+        font-size:27px;
+    }
+
+    .registration-heading p{
+        font-size:11px;
+    }
+
+    .registration-form-card,
+    .registration-info{
+        padding:17px;
+    }
+
+    .reg-team-grid{
+        grid-template-columns:1fr 1fr;
+        gap:8px 9px;
     }
 }
 
@@ -1004,10 +1061,18 @@ footer{
     .section-title h2{
         font-size:24px;
     }
+
+    .reg-team-grid{
+        grid-template-columns:1fr;
+    }
+
+    .reg-field.full{
+        grid-column:auto;
+    }
 }
+
 </style>
 </head>
-
 
 <body>
 
@@ -1037,10 +1102,7 @@ TOURNAMENTS
 
 <nav>
 
-<a
-class="active"
-href="#home"
->
+<a class="active" href="#home">
 Home
 </a>
 
@@ -1071,15 +1133,11 @@ Rules
 </header>
 
 
-
 <!-- =========================
      HERO
 ========================= -->
 
-<section
-class="hero"
-id="home"
->
+<section class="hero" id="home">
 
 <img
 class="hero-logo"
@@ -1128,9 +1186,6 @@ REGISTER NOW →
 
 </div>
 
-
-
-<!-- CURRENT TOURNAMENT -->
 
 <div class="tournament-card">
 
@@ -1193,7 +1248,6 @@ REGISTER NOW →
 </section>
 
 
-
 <!-- =========================
      FEATURES
 ========================= -->
@@ -1235,7 +1289,6 @@ No registration fee. Join and compete.
 </div>
 
 
-
 <div class="card">
 
 <div class="feature-icon">
@@ -1251,7 +1304,6 @@ Royal Pass, UC and real cash prizes depending on the tournament.
 </p>
 
 </div>
-
 
 
 <div class="card">
@@ -1278,17 +1330,383 @@ No hacks, scripts, modified files or cheating.
 </section>
 
 
-
 <!-- =========================
-     REGISTRATION + ANNOUNCEMENTS
+     REGISTRATION
 ========================= -->
 
-<section id="register">
+<section id="register" class="registration-section">
+
+<div class="container">
+
+
+<div class="registration-heading">
+
+<h2>
+TEAM REGISTRATION
+</h2>
+
+<p>
+Fill in the form below to register your team for the tournament.
+</p>
+
+</div>
+
+
+<div class="registration-layout">
+
+
+<div class="registration-form-card">
+
+<form onsubmit="submitForm(event)">
+
+
+<div class="reg-step">
+
+<div class="reg-step-title">
+1. Tournament Selection
+</div>
+
+<select required>
+
+<option>
+AF Tournament #04 (Squad)
+</option>
+
+<option>
+AF Tournament #04 (Duo)
+</option>
+
+</select>
+
+</div>
+
+
+<div class="reg-step">
+
+<div class="reg-step-title">
+2. Team Details
+</div>
+
+
+<div class="reg-team-grid">
+
+
+<div class="reg-field full">
+
+<label>
+Team Name *
+</label>
+
+<input
+type="text"
+placeholder="Enter your team name"
+required
+>
+
+</div>
+
+
+<div class="reg-field">
+
+<label>
+Player 1 Name *
+</label>
+
+<input
+type="text"
+placeholder="Enter player 1 name"
+required
+>
+
+</div>
+
+
+<div class="reg-field">
+
+<label>
+Player 1 PUBG ID *
+</label>
+
+<input
+type="text"
+placeholder="Enter PUBG ID"
+required
+>
+
+</div>
+
+
+<div class="reg-field">
+
+<label>
+Player 2 Name *
+</label>
+
+<input
+type="text"
+placeholder="Enter player 2 name"
+required
+>
+
+</div>
+
+
+<div class="reg-field">
+
+<label>
+Player 2 PUBG ID *
+</label>
+
+<input
+type="text"
+placeholder="Enter PUBG ID"
+required
+>
+
+</div>
+
+
+<div class="reg-field">
+
+<label>
+Player 3 Name *
+</label>
+
+<input
+type="text"
+placeholder="Enter player 3 name"
+required
+>
+
+</div>
+
+
+<div class="reg-field">
+
+<label>
+Player 3 PUBG ID *
+</label>
+
+<input
+type="text"
+placeholder="Enter PUBG ID"
+required
+>
+
+</div>
+
+
+<div class="reg-field">
+
+<label>
+Player 4 Name *
+</label>
+
+<input
+type="text"
+placeholder="Enter player 4 name"
+required
+>
+
+</div>
+
+
+<div class="reg-field">
+
+<label>
+Player 4 PUBG ID *
+</label>
+
+<input
+type="text"
+placeholder="Enter PUBG ID"
+required
+>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<div class="reg-step">
+
+<div class="reg-step-title">
+3. Captain Contact
+</div>
+
+
+<label>
+WhatsApp Number *
+</label>
+
+<input
+type="tel"
+placeholder="e.g. +447123456789"
+required
+>
+
+
+<label class="reg-check">
+
+<input
+type="checkbox"
+required
+>
+
+<span>
+I have read and agree to the tournament rules.
+</span>
+
+</label>
+
+
+<button
+class="btn reg-submit"
+type="submit"
+>
+Submit Registration →
+</button>
+
+</div>
+
+
+</form>
+
+</div>
+
+
+<!-- REGISTRATION INFO -->
+
+<div class="registration-side">
+
+
+<div class="registration-info">
+
+<h3>
+REGISTRATION INFO
+</h3>
+
+
+<div class="info-item">
+
+<div class="info-icon">
+✓
+</div>
+
+<div>
+
+<strong>
+No Entry Fee
+</strong>
+
+<span>
+Completely free to join
+</span>
+
+</div>
+
+</div>
+
+
+<div class="info-item">
+
+<div class="info-icon">
+♟
+</div>
+
+<div>
+
+<strong>
+Squad Mode
+</strong>
+
+<span>
+4 Players per team
+</span>
+
+</div>
+
+</div>
+
+
+<div class="info-item">
+
+<div class="info-icon">
+▣
+</div>
+
+<div>
+
+<strong>
+Register Early
+</strong>
+
+<span>
+Slots are limited
+</span>
+
+</div>
+
+</div>
+
+
+<div class="info-item">
+
+<div class="info-icon">
+?
+</div>
+
+<div>
+
+<strong>
+Need Help?
+</strong>
+
+<span>
+Contact us on WhatsApp
+</span>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="reg-quote">
+
+“Good teams don't just play the game,
+<br>
+they build a legacy.”
+
+<small>
+— AF Tournaments
+</small>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ANNOUNCEMENTS
+========================= -->
+
+<section id="announcements">
 
 <div class="container two-col">
 
-
-<!-- REGISTRATION -->
 
 <div class="panel">
 
@@ -1309,215 +1727,17 @@ Fill in the details below to secure your spot in the tournament.
 </div>
 
 
-<form onsubmit="submitForm(event)">
-
-<div class="form-grid">
-
-
-<div class="field full">
-
-<label>
-Tournament
-</label>
-
-<select required>
-
-<option>
-AF Tournament #04 — Squad
-</option>
-
-<option>
-AF Tournament #04 — Duo
-</option>
-
-</select>
-
-</div>
-
-
-
-<div class="field full">
-
-<label>
-Team Name
-</label>
-
-<input
-type="text"
-placeholder="Enter team name"
-required
+<a
+href="#register"
+class="btn"
 >
+REGISTER NOW →
+</a>
 
 </div>
 
 
-
-<div class="field">
-
-<label>
-Player 1 Name
-</label>
-
-<input
-type="text"
-placeholder="Player 1 name"
-required
->
-
-</div>
-
-
-
-<div class="field">
-
-<label>
-Player 1 PUBG ID
-</label>
-
-<input
-type="text"
-placeholder="Player 1 PUBG ID"
-required
->
-
-</div>
-
-
-
-<div class="field">
-
-<label>
-Player 2 Name
-</label>
-
-<input
-type="text"
-placeholder="Player 2 name"
-required
->
-
-</div>
-
-
-
-<div class="field">
-
-<label>
-Player 2 PUBG ID
-</label>
-
-<input
-type="text"
-placeholder="Player 2 PUBG ID"
-required
->
-
-</div>
-
-
-
-<div class="field">
-
-<label>
-Player 3 Name
-</label>
-
-<input
-type="text"
-placeholder="Player 3 name"
->
-
-</div>
-
-
-
-<div class="field">
-
-<label>
-Player 3 PUBG ID
-</label>
-
-<input
-type="text"
-placeholder="Player 3 PUBG ID"
->
-
-</div>
-
-
-
-<div class="field">
-
-<label>
-Player 4 Name
-</label>
-
-<input
-type="text"
-placeholder="Player 4 name"
->
-
-</div>
-
-
-
-<div class="field">
-
-<label>
-Player 4 PUBG ID
-</label>
-
-<input
-type="text"
-placeholder="Player 4 PUBG ID"
->
-
-</div>
-
-
-
-<div class="field full">
-
-<label>
-Captain WhatsApp Number
-</label>
-
-<input
-type="tel"
-placeholder="+44..."
-required
->
-
-</div>
-
-
-
-<div class="field full">
-
-<button
-class="btn form-submit"
-type="submit"
->
-SUBMIT REGISTRATION →
-</button>
-
-</div>
-
-
-</div>
-
-</form>
-
-</div>
-
-
-
-<!-- ANNOUNCEMENTS -->
-
-<div
-class="panel"
-id="announcements"
->
+<div class="panel">
 
 <div class="panel-title">
 
@@ -1560,7 +1780,6 @@ Register your team before the available slots are filled.
 </div>
 
 
-
 <div class="notice">
 
 <div class="notice-icon">
@@ -1584,7 +1803,6 @@ Check this page for maps, dates, room ID and passwords.
 </div>
 
 </div>
-
 
 
 <div class="notice">
@@ -1619,7 +1837,6 @@ Hacks, scripts and modified files are strictly prohibited.
 </div>
 
 </section>
-
 
 
 <!-- =========================
@@ -1712,7 +1929,6 @@ Team Alpha
 </tr>
 
 
-
 <tr>
 
 <td>
@@ -1740,7 +1956,6 @@ Ghosts
 </td>
 
 </tr>
-
 
 
 <tr>
@@ -1781,7 +1996,6 @@ Royal Hunters
 </div>
 
 </section>
-
 
 
 <!-- =========================
@@ -1832,7 +2046,6 @@ VIEW RESULTS →
 </div>
 
 
-
 <div class="card history-card">
 
 <span class="status">
@@ -1855,7 +2068,6 @@ VIEW RESULTS →
 </a>
 
 </div>
-
 
 
 <div class="card history-card">
@@ -1887,7 +2099,6 @@ VIEW RESULTS →
 </div>
 
 </section>
-
 
 
 <!-- =========================
@@ -1935,7 +2146,6 @@ Only PUBG Mobile is allowed. Players must use their registered accounts.
 </div>
 
 
-
 <div class="rule">
 
 <div class="number">
@@ -1957,7 +2167,6 @@ Hacks, scripts, modified files and other unfair methods are prohibited.
 </div>
 
 
-
 <div class="rule">
 
 <div class="number">
@@ -1977,7 +2186,6 @@ Players must provide accurate team and player information.
 </div>
 
 </div>
-
 
 
 <div class="rule">
@@ -2006,7 +2214,6 @@ Follow the announced map, schedule, room details and instructions.
 </div>
 
 </section>
-
 
 
 <!-- =========================
@@ -2040,7 +2247,6 @@ REGISTER YOUR TEAM →
 </section>
 
 
-
 <!-- =========================
      FOOTER
 ========================= -->
@@ -2058,10 +2264,13 @@ alt="AF Logo"
 >
 
 <span>
+
 <span class="af">
 AF
 </span>
+
 TOURNAMENTS
+
 </span>
 
 </div>
@@ -2093,7 +2302,6 @@ Play • Compete • Win
 </footer>
 
 
-
 <!-- =========================
      JAVASCRIPT
 ========================= -->
@@ -2111,97 +2319,6 @@ function submitForm(event){
 
 }
 
-
-/* =========================
-   COUNTDOWN TIMER
-========================= */
-
-const targetDate =
-    new Date("2026-09-16T20:00:00+01:00").getTime();
-
-
-function updateCountdown(){
-
-    const now =
-        new Date().getTime();
-
-    let distance =
-        targetDate - now;
-
-
-    if(distance < 0){
-        distance = 0;
-    }
-
-
-    const days =
-        Math.floor(
-            distance /
-            (1000 * 60 * 60 * 24)
-        );
-
-
-    const hours =
-        Math.floor(
-            (distance %
-            (1000 * 60 * 60 * 24)) /
-            (1000 * 60 * 60)
-        );
-
-
-    const minutes =
-        Math.floor(
-            (distance %
-            (1000 * 60 * 60)) /
-            (1000 * 60)
-        );
-
-
-    const seconds =
-        Math.floor(
-            (distance %
-            (1000 * 60)) /
-            1000
-        );
-
-
-    const boxes =
-        document.querySelectorAll(
-            ".count div b"
-        );
-
-
-    if(boxes.length >= 4){
-
-        boxes[0].textContent =
-            String(days).padStart(2,"0");
-
-        boxes[1].textContent =
-            String(hours).padStart(2,"0");
-
-        boxes[2].textContent =
-            String(minutes).padStart(2,"0");
-
-        boxes[3].textContent =
-            String(seconds).padStart(2,"0");
-
-    }
-
-}
-
-
-updateCountdown();
-
-
-setInterval(
-    updateCountdown,
-    1000
-);
-
-
-/* =========================
-   NAVIGATION
-========================= */
 
 const links =
 document.querySelectorAll("nav a");

@@ -8,9 +8,6 @@
 <title>AF TOURNAMENTS</title>
 
 <style>
-
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap');
-
 *{
     margin:0;
     padding:0;
@@ -70,10 +67,8 @@ header{
     display:flex;
     align-items:center;
     gap:10px;
-    font-family:'Rajdhani',sans-serif;
-    font-size:22px;
-    font-weight:700;
-    letter-spacing:1px;
+    font-size:18px;
+    font-weight:900;
 }
 
 .brand img{
@@ -85,10 +80,8 @@ header{
 
 .brand .af{
     color:#ffc400;
-    font-size:30px;
+    font-size:27px;
     font-style:italic;
-    font-weight:700;
-    letter-spacing:1px;
 }
 
 .brand strong{
@@ -2118,6 +2111,97 @@ function submitForm(event){
 
 }
 
+
+/* =========================
+   COUNTDOWN TIMER
+========================= */
+
+const targetDate =
+    new Date("2026-09-16T20:00:00+01:00").getTime();
+
+
+function updateCountdown(){
+
+    const now =
+        new Date().getTime();
+
+    let distance =
+        targetDate - now;
+
+
+    if(distance < 0){
+        distance = 0;
+    }
+
+
+    const days =
+        Math.floor(
+            distance /
+            (1000 * 60 * 60 * 24)
+        );
+
+
+    const hours =
+        Math.floor(
+            (distance %
+            (1000 * 60 * 60 * 24)) /
+            (1000 * 60 * 60)
+        );
+
+
+    const minutes =
+        Math.floor(
+            (distance %
+            (1000 * 60 * 60)) /
+            (1000 * 60)
+        );
+
+
+    const seconds =
+        Math.floor(
+            (distance %
+            (1000 * 60)) /
+            1000
+        );
+
+
+    const boxes =
+        document.querySelectorAll(
+            ".count div b"
+        );
+
+
+    if(boxes.length >= 4){
+
+        boxes[0].textContent =
+            String(days).padStart(2,"0");
+
+        boxes[1].textContent =
+            String(hours).padStart(2,"0");
+
+        boxes[2].textContent =
+            String(minutes).padStart(2,"0");
+
+        boxes[3].textContent =
+            String(seconds).padStart(2,"0");
+
+    }
+
+}
+
+
+updateCountdown();
+
+
+setInterval(
+    updateCountdown,
+    1000
+);
+
+
+/* =========================
+   NAVIGATION
+========================= */
 
 const links =
 document.querySelectorAll("nav a");

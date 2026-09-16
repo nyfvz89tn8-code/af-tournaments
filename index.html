@@ -122,25 +122,19 @@ nav a.active{
     display:flex;
     align-items:center;
 
-    background:
-        url("1148B0E0-B959-476E-9028-06FDE1F26A4F.png")
-        center center / cover no-repeat,
-        radial-gradient(
-            circle at 74% 45%,
-            rgba(255,190,0,.25),
-            transparent 28%
-        ),
-        radial-gradient(
-            circle at 55% 80%,
-            rgba(255,180,0,.12),
-            transparent 28%
-        ),
+    background-image:
         linear-gradient(
-            110deg,
-            #02070c 0%,
-            #071019 42%,
-            #0a0d0c 100%
-        );
+            90deg,
+            rgba(2,7,12,.94) 0%,
+            rgba(2,7,12,.70) 40%,
+            rgba(2,7,12,.25) 70%,
+            rgba(2,7,12,.60) 100%
+        ),
+        url("1148B0E0-B959-476E-9028-06FDE1F26A4F.png");
+
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
 
     border-bottom:1px solid #202b37;
 }
@@ -151,12 +145,15 @@ nav a.active{
     inset:0;
 
     background:
-        linear-gradient(
-            90deg,
-            rgba(2,7,12,.98) 0%,
-            rgba(2,7,12,.72) 42%,
-            rgba(2,7,12,.25) 70%,
-            rgba(2,7,12,.78) 100%
+        radial-gradient(
+            circle at 74% 45%,
+            rgba(255,190,0,.18),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 55% 80%,
+            rgba(255,180,0,.10),
+            transparent 28%
         ),
         repeating-linear-gradient(
             115deg,
@@ -164,6 +161,8 @@ nav a.active{
             rgba(255,196,0,.025) 71px,
             transparent 72px
         );
+
+    pointer-events:none;
 }
 
 .hero:after{
@@ -183,6 +182,8 @@ nav a.active{
     box-shadow:
         0 0 90px rgba(255,196,0,.12),
         inset 0 0 90px rgba(255,196,0,.05);
+
+    pointer-events:none;
 }
 
 .hero-inner{
@@ -286,7 +287,7 @@ nav a.active{
 
     transform:translate(50%,-50%);
 
-    opacity:.78;
+    opacity:.40;
 
     mix-blend-mode:screen;
 
@@ -926,8 +927,30 @@ footer{
     .hero{
         min-height:auto;
 
-        background-position:70% center;
         background-size:cover;
+
+        /*
+          Mobile par background ko thora
+          right side rakha gaya hai taake
+          parachute wala banda visible rahe.
+        */
+        background-position:62% center;
+    }
+
+    .hero:before{
+        background:
+            linear-gradient(
+                90deg,
+                rgba(2,7,12,.92) 0%,
+                rgba(2,7,12,.68) 45%,
+                rgba(2,7,12,.30) 75%,
+                rgba(2,7,12,.55) 100%
+            ),
+            radial-gradient(
+                circle at 70% 45%,
+                rgba(255,190,0,.16),
+                transparent 30%
+            );
     }
 
     .hero-inner{
@@ -993,6 +1016,15 @@ footer{
 }
 
 @media(max-width:480px){
+
+    .hero{
+        /*
+          Chhoti mobile screen par
+          parachute + soldier ko aur
+          right side se show karega.
+        */
+        background-position:63% center;
+    }
 
     .hero h1{
         font-size:47px;
